@@ -17,28 +17,89 @@ Faça um programa que contenha um menu com as seguintes opções:
 #include <stdio.h>
 #include <string.h>
 
-int S1[20];
+char S1[20], S2[20];
 
 int main(int argc, char const *argv[])
 {
-    //input();
-    //size();
+    input();
+    // size();
+    // comparator();
+    // concat();
+    // reverse();
+    substr();
 
     return 0;
 }
 
-void input()
+void input() // (a) Ler uma string S1 (tamanho máximo 20 caracteres);
 {
     printf("Type a string. ");
     scanf("%s", &S1);
 }
 
-void size()
+void size() // (b) Imprimir o tamanho da string S1;
 {
     printf("\nS1's Size: %i", strlen(S1));
 }
 
-void comparator()
+void comparator() // (c) Comparar a string S1 com uma nova string S2 fornecida pelo usuário e imprimir o resultado da comparação;
 {
-    ;
+    printf("Type a new string to be compared. ");
+    scanf("%s", &S2);
+
+    if (strcmp(S1, S2) != 0)
+        printf("\nS1 and S2 are different. ");
+    else if (strcmp(S1, S2) == 0)
+        printf("\nS1 and S2 are equal. ");
+    if (strcmp(S1, S2) != 0 && strcmp(S1, S2) < 0)
+        printf("\nS1 precedes S2. ");
+    if (strcmp(S1, S2) != 0 && strcmp(S1, S2) > 0)
+        printf("\nS1 proceeds S2. ");
+}
+
+void concat() // d) Concatenar a string S1 com uma nova string S2 e imprimir na tela o resultado da concatenação;
+{
+    printf("Type a new string to be concatenated. ");
+    scanf("%s", &S2);
+
+    printf("%s", strcat(S1, S2)); // Junta S1 e S2, e atribui a nova string a S1. (!!!)
+}
+
+void reverse() //(e) Imprimir a string S1 de forma reversa;
+{
+    printf("Reverse: ");
+
+    for (int i = strlen(S1) - 1; i >= 0; i--)
+    {
+        printf("%c", S1[i]);
+    }
+}
+
+void substr() // (h) Verificar se uma string S2 é substring de S1. A string S2 deve ser informada pelo usuário;
+{
+    int c = 0;
+
+    printf("Type a new string. ");
+    scanf("%s", &S2);
+
+    for (int i = 0; i < strlen(S1)-1; i++)
+    {
+        if(S1[i] == S2[i] && S2[i+1] != S1[i+1])
+        continue;
+
+        S2[i + 1] = S2[i];
+
+        if (S1[i+1] == S2[i+1])
+        {
+            c++;
+        }
+
+        printf("c = %i\t", c);
+    }
+
+    if (c == strlen(S2))
+        printf("S2 is a substring of [%s]", S2, S1);
+
+    else
+        printf("S2 is not a substring of [%s]", S1);
 }

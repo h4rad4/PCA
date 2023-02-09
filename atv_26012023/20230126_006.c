@@ -8,15 +8,67 @@ Dada uma matriz quadrada A5x5 , verificar se A é um quadrado mágico.
 */
 #include <stdio.h>
 
-int m[5][5] = {{1, 1, 1, 1, 1},
-               {2, 2, 2, 2, 2},
-               {3, 3, 3, 3, 3},
-               {4, 4, 4, 4, 4},
-               {5, 5, 5, 5, 5}};
+int m[5][5];
 
 int sLinha = 0, sColuna = 0, sD1 = 0, sD2 = 0;
 
+int l, c;
+
 int main(int argc, char const *argv[])
+{
+    createMatrix();
+
+    printf("\n Matrix: \n");
+    printer();
+
+    sumLinha();
+        printf("Sum L = %i \n", sLinha);
+    sumColuna();
+        printf("Sum C = %i \n", sColuna);
+    sumD1();
+        printf("Sum D1 = %i \n", sD1);
+    sumD2();
+        printf("Sum D2 = %i \n", sD2);
+
+    if (sLinha == sColuna && sD1 == sD2 && sLinha == sD1)
+        printf("\nMagic Square!");
+    else
+        printf("\n Not a magic square");
+
+    return 0;
+}
+
+void createMatrix()
+{
+    printf("Type the matrix' dimension (i). ");
+    scanf("%i", &l);
+
+    printf("Type the matrix' dimension (j). ");
+    scanf("%i", &c);
+
+    for (int i = 0; i < l; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            printf("Input the elements. i[%i] j[%i]", i, j);
+            scanf("%i", &m[i][j]);
+        }
+    }
+}
+
+void printer()
+{
+    for (int i = 0; i < l; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            printf("[%i]", m[i][j]);
+        }
+    }
+    printf("\n----------------------------- \n");
+}
+
+void sumLinha()
 {
     for (int i = 0; i < 5; i++)
     {
@@ -25,8 +77,10 @@ int main(int argc, char const *argv[])
             sLinha += m[i][j];
         }
     }
-    printf("Sum L = %i \n", sLinha);
+}
 
+void sumColuna()
+{
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -34,8 +88,10 @@ int main(int argc, char const *argv[])
             sColuna += m[i][j];
         }
     }
-    printf("Sum C = %i \n", sColuna);
+}
 
+void sumD1()
+{
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -46,19 +102,12 @@ int main(int argc, char const *argv[])
             }
         }
     }
-    printf("Sum D1 = %i \n", sD1);
+}
 
+void sumD2()
+{
     for (int i = 0; i < 5; i++)
     {
         sD2 += m[5 - 1 - i][5 - 1 - i];
     }
-    printf("Sum D2 = %i \n", sD2);
-
-    if (sLinha == sColuna && sD1 == sD2 && sLinha == sD1)
-    printf("\nMagic Square!");
-    else
-    printf("\n Not a magic square");
-    
-
-    return 0;
 }

@@ -48,16 +48,16 @@ int main(int argc, char const *argv[])
     }
 
     if (esc == 1)
-        ordenador();
+        ord();
     if (esc == 2)
-        deletador();
+        delete();
     if (esc == 3)
-        impressor();
+        impressora();
 
     return 0;
 }
 
-void impressor()
+void impressora()
 {
     printf("\nResultado: \n");
     for (int i = 0; i <= c; i++)
@@ -66,7 +66,7 @@ void impressor()
     }
 }
 
-void deletador()
+void delete()
 {
     char ap[120];
 
@@ -85,7 +85,7 @@ void deletador()
     }
 }
 
-void ordenador()
+void ord()
 {
 
     int a, b;

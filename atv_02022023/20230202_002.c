@@ -71,7 +71,7 @@ void deletador()
     char ap[120];
 
     setbuf(stdin, NULL);
-    printf("Qual nome quer deletar? ");
+    printf("Qual nome quer deletar?  ");
     fgets(ap, sizeof(ap), stdin);
     ap[strlen(ap) - 1] = '\0';
 

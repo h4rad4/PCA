@@ -14,7 +14,7 @@ d) Inserir os nomes da lista em outra lista em ordem alfabética.
 #include <stdio.h>
 #include <string.h>
 
-char nomes[20][120]; // tamanho da matriz ajustado para 20
+char nomes[20][120];
 int c = -1;
 
 void imprimir();
@@ -84,7 +84,7 @@ void delete()
     char ap[120];
 
     setbuf(stdin, NULL);
-    printf("Qual nome queres apagar? ");
+    printf("Qual nome quer deletar? ");
     fgets(ap, sizeof(ap), stdin);
     ap[strlen(ap) - 1] = '\0';
 

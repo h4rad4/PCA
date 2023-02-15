@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char nomes[20][120]; // tamanho da matriz ajustado para 20
+char nomes[20][120];
 int c = -1;
 
 void imprimir();

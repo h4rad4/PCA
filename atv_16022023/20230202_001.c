@@ -86,9 +86,9 @@ void defesa()
                 nota[i] = nota[j];
                 nota[j] = temp;
 
-                strtemp[30] = strcpy(strtemp, jogadores[i]);
-                jogadores[i][30] = strcpy(jogadores[i], jogadores[j]);
-                jogadores[j][30] = strtemp;
+                strcpy(strtemp, jogadores[i]);
+                strcpy(jogadores[i], jogadores[j]);
+                strcpy(jogadores[j], strtemp);
             }
         }
         // printf("%i- ", nota[i]); // Printar notas ordenadas
@@ -113,9 +113,9 @@ void meiocampo()
                 nota[i] = nota[j];
                 nota[j] = temp;
 
-                strtemp[30] = strcpy(strtemp, jogadores[i]);
-                jogadores[i][30] = strcpy(jogadores[i], jogadores[j]);
-                jogadores[j][30] = strtemp;
+                strcpy(strtemp, jogadores[i]);
+                strcpy(jogadores[i], jogadores[j]);
+                strcpy(jogadores[j], strtemp);
             }
         }
     }
@@ -138,9 +138,9 @@ void atacante()
                 nota[i] = nota[j];
                 nota[j] = temp;
 
-                strtemp[30] = strcpy(strtemp, jogadores[i]);
-                jogadores[i][30] = strcpy(jogadores[i], jogadores[j]);
-                jogadores[j][30] = strtemp;
+                strcpy(strtemp, jogadores[i]);
+                strcpy(jogadores[i], jogadores[j]);
+                strcpy(jogadores[j], strtemp);
             }
         }
     }

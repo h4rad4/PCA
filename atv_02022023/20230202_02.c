@@ -1,3 +1,16 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Implementar uma função que receba uma lista de nomes inseridos pelo usuário  (até 20 nomes com até 120 caracteres). O usuário pode inserir desde zero até 20 nomes.
+
+Criar funções para:
+
+a) imprimir a lista de nomes
+b) Eliminar um nome da lista.
+c) Imprimir os nomes da lista em ordem alfabética.
+d) Inserir os nomes da lista em outra lista em ordem alfabética.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 #include <stdio.h>
 #include <string.h>
 

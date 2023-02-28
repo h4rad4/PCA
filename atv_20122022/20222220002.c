@@ -1,3 +1,5 @@
+// Escreva um algoritmo que lê 50 números inteiros e em seguida mostra a soma de todos os ímpares lidos.
+
 # include <stdio.h>
 # include <stdlib.h>
 

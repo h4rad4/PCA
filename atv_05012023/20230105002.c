@@ -1,4 +1,5 @@
 /*
+-------------------------------------------------------------------------------------------------------------------------------
 Um centro materno-infantil deseja criar um programa para recomendar aos médicos sobre o tipo de parto a ser adotado.
 O mecanismo de recomendação utiliza o peso do feto e quantidade de semanas de gestação para sugerir o tipo de parto mais indicado.
 
@@ -16,6 +17,7 @@ Desenvolva um programa na linguagem C, o qual deverá:
         .Qualquer outra combinação, "Parto Cesariana".
 
 Utilizar as duas funções num programa.
+-------------------------------------------------------------------------------------------------------------------------------
 */
 #include <stdio.h>
 #include <stdlib.h>

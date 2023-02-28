@@ -1,6 +1,6 @@
+// Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
 # include <stdio.h>
 
-// Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
 
 int main()
 {

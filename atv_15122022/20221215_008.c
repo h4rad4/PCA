@@ -1,6 +1,6 @@
+// Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit.
 # include <stdio.h>
 
-// Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit.
 
 int main()
 {

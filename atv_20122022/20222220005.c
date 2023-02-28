@@ -1,3 +1,5 @@
+// Altere o programa anterior para que ele não permita a entrada de valores negativos.
+
 # include <stdio.h>
 # include <stdlib.h>
 

@@ -1,3 +1,13 @@
+/*
+----------------------------------------------------------------------
+Calcular os valore de x e y onde a seguinte expressão
+
+xy - x² + y tem valor máximo, a partir dos números naturais n e m tais que 
+
+x <= m e y <= n.
+----------------------------------------------------------------------
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>

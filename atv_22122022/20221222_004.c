@@ -1,3 +1,5 @@
+// Dado um número identificar se é um número primo. (Um número primo é aquele que é dividido apenas por um e por ele mesmo.)
+
 #include <stdio.h>
 
 int main(int argc, char const *argv[])

@@ -1,3 +1,4 @@
+// Altere o algoritmo anterior para que ele considere apenas a soma dos ímpares que estejam entre 100 e 200.
 # include <stdio.h>
 # include <stdlib.h>
 

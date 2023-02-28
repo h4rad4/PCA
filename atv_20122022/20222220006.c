@@ -1,3 +1,5 @@
+// Faça um programa para imprimir a tabuada de 1 a 9 utilizando laços de repetição.
+
 #include <stdio.h>
 
 int main(int argc, char const *argv[])

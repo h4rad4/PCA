@@ -1,3 +1,23 @@
+/*
+-----------------------------------------------------------------------------
+Fazer um programa para calcular a raiz quadrada de um
+número positivo usando o roteiro abaixo (baseado no método de
+aproximaçõessucessivas de Newton-Raphson). Seja Y o número para o qual se
+quer computar a raiz quadrada:
+● A primeira aproximação para a raiz quadrada de Y é dada por:
+
+● As demais aproximações são calculadas pela seguinte fórmula de
+recorrência:
+
+● A aproximação deve continuar até que o valor obtido mude pouco
+com o passar das iterações (menos de e = 0.1), Ou seja:
+
+● Compare o resultado obtido com o resultado produzido pela função
+sqrt() disponível na biblioteca <math.h>:
+Obs.: O valor absoluto | . | pode ser calculado através da função fabs(),
+disponível na biblioteca <math.h>.
+-----------------------------------------------------------------------------
+*/
 #include <stdio.h>
 #include <math.h>
 
@@ -9,35 +29,12 @@ int main()
 
     printf("Insira o valor Y: ");
     scanf("%f", &y);
-    /*
-        // OPERAÇÃO
-
-        x1 = y/2;
-
-        num = pow(x1,2) - y;
-        printf("num= %.2f\n", num);
-
-        den = 2*x1;
-        printf("den= %.2f\n", den);
-
-        x2 = x1 - (num/den);
-        diff = fabs(x2-x1);
-
-        x1 = x2;
-
-        printf("diff = %.2f\n", diff);
-        printf("x1 = %.2f\n", x1);
-        printf("x2 = %.2f\n", x2);
-
-        system("pause");
-    */
 
     x1 = y / 2;
 
     num = pow(x1, 2) - y;
-    // printf("num= %.2f\n", num); // Debug
+
     den = 2 * x1;
-    // printf("den= %.2f\n", den); // Debug
 
     x2 = x1 - (num / den);
     diff = fabs(x2 - x1);
@@ -46,17 +43,9 @@ int main()
     for (i; i >= 0.1;)
     {
 
-        /* Debug
-        printf("x1 = %.2f\n", x1);
-        printf("x2 = %.2f\n", x2);
-        printf("diff= %.2f\n", diff);
-        */
-
         num = pow(x1, 2) - y;
-        // printf("num= %.2f\n", num); // Debug
 
         den = 2 * x1;
-        // printf("den= %.2f\n", den); // Debug
 
         x2 = x1 - (num / den);
         diff = fabs(x2 - x1);

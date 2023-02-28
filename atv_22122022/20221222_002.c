@@ -1,3 +1,4 @@
+// Escreva um programa em C que lê 15 valores reais, encontra o maior e o menor deles e mostra o resultado.
 #include <stdio.h>
 
 int main(int argc, char const *argv[])

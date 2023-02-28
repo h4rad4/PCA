@@ -1,4 +1,12 @@
+/*
+---------------------------------------------------------------------------------------------------------------------
+A partir de um número inteiro positivo n. Determinar os inteiros entre 1 e n que são comprimento da hipotenusa de um 
+triângulo retângulo com catetos inteiros.
+---------------------------------------------------------------------------------------------------------------------
+*/
+
 #include <stdio.h>
+
 int main(int argc, char const *argv[])
 {
     int hip;

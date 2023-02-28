@@ -1,5 +1,7 @@
 /*
-Faça uma função que dados um inteiro n e um inteiro d, 0 < d < 9, devolve quantas vezes o dígito d aparece em n. (dica: utilizar o operador % na solução )
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Faça uma função que dados um inteiro n e um inteiro d, 0 < d < 9, devolve quantas vezes o dígito d aparece em n. (dica: utilizar o operador % na solução)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
 #include <stdio.h>

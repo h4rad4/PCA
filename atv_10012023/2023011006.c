@@ -1,5 +1,7 @@
 /*
-Faça uma função que transforme um numero decimal em binaryário. (procura em internet como é feita essa transformação)
+-------------------------------------------------------------------------------------------------------------------
+Faça uma função que transforme um numero decimal em binário. (procura em internet como é feita essa transformação)
+-------------------------------------------------------------------------------------------------------------------
 */
 
 #include <stdio.h>

@@ -1,6 +1,6 @@
+// Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 # include <stdio.h>
 
-// Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 
 int main()
 {

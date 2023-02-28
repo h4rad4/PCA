@@ -1,6 +1,6 @@
+// Faça um Programa que converta metros para centímetros.
 # include <stdio.h>
 
-// Faça um Programa que converta metros para centímetros.
 
 int main()
 {

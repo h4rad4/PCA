@@ -1,4 +1,5 @@
 /*
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Na matemática, a sequência de Fibonacci é uma sequência de números inteiros, começando normalmente por 0 e 1, na qual, cada termo subsequente (número de Fibonacci) 
 corresponde a soma dos dois anteriores.
 
@@ -17,6 +18,7 @@ Fn = Fn-1 + Fn-2 para n>2.
 
 Escreva uma função que retorne o número relativo a ao valor na sequência de Fibonacci na posição n:
 int fib(int n)  //Recebe n como parâmetro e retorna Fn
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
 #include <stdio.h>

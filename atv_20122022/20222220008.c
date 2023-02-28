@@ -1,3 +1,12 @@
+/*
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+O programa deve receber como entrada três notas de cada aluno em uma linha;
+Deve perguntar ao usuário se deseja inserir as notas de outro aluno, e:
+
+Caso a resposta seja “sim” deve solicitar os dados do próximo aluno.
+Caso a resposta seja “não” deve mostrar a maior e a menor nota do primeiro, do segundo, e do terceiro exercício e a maior e a menor média.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 #include <stdio.h>
 
 int main()

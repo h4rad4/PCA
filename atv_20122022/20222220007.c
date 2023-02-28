@@ -1,3 +1,9 @@
+/*
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Em uma disciplina com três exercícios, um professor deseja saber qual a maior e a menor nota de cada exercício e qual a maior e a menor média final. 
+Faça um programa para auxiliá-lo nesta tarefa.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 #include <stdio.h>
 
 

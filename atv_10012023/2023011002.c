@@ -1,6 +1,8 @@
 /*
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Usando a função programada em 1 crie outra função que recebe dos números inteiros positivos e verifica se o primeiro é uma permutação de b
 (para a ser uma permutação tem que ter de cada número entre 0 e 9 a mesma quantidade)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
 #include <stdio.h>

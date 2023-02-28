@@ -15,6 +15,14 @@ número em radianos.
 #include <stdio.h>
 #include <math.h>
 
+int main(int argc, char const *argv[])
+{
+    float n = entrada();
+    float arct = arctan(n);
+
+    printf("Arctan of [%.2f] is approximately [%f]", n, arct);
+}
+
 float entrada()
 {
     float n;
@@ -45,12 +53,4 @@ float arctan(float x)
     }
 
     return result;
-}
-
-int main(int argc, char const *argv[])
-{
-    float n = entrada();
-    float arct = arctan(n);
-
-    printf("Arctan of [%.2f] is approximately [%f]", n, arct);
 }

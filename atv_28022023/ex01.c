@@ -44,9 +44,9 @@ int main(int argc, char const *argv[])
         printf("\n");
     letraD(eq, notas, sexo);
         printf("\n");
-    letraF(eq, notas, sexo);
+    letraF(eq, notas);
         printf("\n");
-    letraG(eq, notas, sexo);
+    letraG(eq, notas, sexo); // executar separadamente
 
     return 0;
 }

@@ -33,26 +33,29 @@ int main(int argc, char const *argv[])
         // printf("%i ", *(v+i));
     }
 
-    mediaDesvio(qt, v, desvio, media);
+    mediaDesvio(qt, v, &desvio, &media);
 
     return 0;
 }
 
 int mediaDesvio(int qt, int *v, int *desvio, int *media)
 {
-    int sum = 0;
+    int sum = 0, num;
+    *desvio = 0;
 
     for (int i = 0; i < qt; i++)
     {
         sum += *(v + i);
     }
     *media = sum / qt;
-    
+
+    printf("Media = %i \n", *media);
+
     for (int i = 0; i < qt; i++)
     {
-        *desvio += (*(v + i) - *media)/qt;
-
-        printf("%i ", *desvio);
+        num = (*v+i) - *media;
+        *desvio += (num*num) /qt;
     }
-    // printf("%i", media);
+
+    printf("Desvio = %i", *desvio);
 }

@@ -34,7 +34,6 @@ int inputs(int *v, int qt)
     {
         printf("Insira o elemento %i do vetor. ", i);
         scanf("%d", &*(v + i));
-
         // printf("%d ", *(v+i));
     }
 
